@@ -1,0 +1,105 @@
+/* ===== Persian-Turkish Aesthetic Styles ===== */
+/* Colors: Warm reds, golds, blues, and greens */
+/* Fonts: Elegant calligraphy-inspired fonts */
+/* Patterns: Rug motifs, floral borders */
+
+/* === Base Styles === */
+body {
+  background-color: #f9f3e6; /* Soft parchment */
+  color: #5e2c04; /* Dark coffee */
+  font-family: 'Scheherazade New', 'Aref Ruqaa', serif; /* Arabic/Persian-style fonts */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://example.com/persian-rug-pattern.png'); /* Optional: Subtle rug texture */
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+}
+
+/* === Headers (Calligraphy-Style) === */
+h1, h2, h3 {
+  font-family: 'Lateef', 'Scheherazade New', cursive;
+  color: #8b4513; /* SaddleBrown */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #d4af37; /* Gold */
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  background: linear-gradient(to right, #d4af37, #8b4513);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Links (Gold & Blue) === */
+a {
+  color: #4169e1; /* RoyalBlue */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #d4af37; /* Gold */
+  text-decoration: underline wavy #ff6b6b; /* Reddish-pink */
+}
+
+/* === Buttons (Rug-Inspired) === */
+button, .button {
+  background: linear-gradient(135deg, #d4af37, #8b4513);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Aref Ruqaa', serif;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #8b4513, #d4af37);
+}
+
+/* === Cat-Themed Elements === */
+.cat-paw {
+  width: 30px;
+  height: 30px;
+  background-image: url('https://example.com/cat-paw.png');
+  display: inline-block;
+}
+
+/* === Lily Flower Accents === */
+.lily-decoration {
+  background-image: url('https://example.com/lily-flower.png');
+  background-repeat: no-repeat;
+  padding-left: 50px;
+  min-height: 50px;
+}
+
+/* === Turkish-Inspired Borders === */
+.rug-border {
+  border: 10px solid transparent;
+  border-image: url('https://example.com/turkish-border.png') 30 round;
+  padding: 15px;
+}
+
+/* === Footer (Persian Motif) === */
+footer {
+  background-color: #5e2c04;
+  color: #f9f3e6;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 5px double #d4af37;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 768px) {
+  body {
+    background-image: none; /* Simplify on mobile */
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
