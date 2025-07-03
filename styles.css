@@ -1,17 +1,11 @@
-/* ===== Persian-Turkish Aesthetic Styles ===== */
-/* Colors: Warm reds, golds, blues, and greens */
-/* Fonts: Elegant calligraphy-inspired fonts */
-/* Patterns: Rug motifs, floral borders */
-
-/* === Base Styles === */
 body {
-  background-color: #f9f3e6; /* Soft parchment */
+  background-color: #d07ddb; 
   color: #5e2c04; /* Dark coffee */
-  font-family: 'Scheherazade New', 'Aref Ruqaa', serif; /* Arabic/Persian-style fonts */
+  font-family: 'Mr De Haviland', 'Passions Conflict', cursive;
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-image: url('https://example.com/persian-rug-pattern.png'); /* Optional: Subtle rug texture */
+  background-image: url('https://example.com/persian-rug-pattern.png');
   background-attachment: fixed;
   background-blend-mode: overlay;
 }
