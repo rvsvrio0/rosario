@@ -1,3 +1,5 @@
-h1 {
-    font-family: 'Mr De Haviland', 'Passions Conflict', cursive;
+.mr-de-haviland-regular {
+  font-family: "Mr De Haviland", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
