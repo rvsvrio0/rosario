@@ -1,3 +1,6 @@
 h1 {
     font-family: 'Mr De Haviland', cursive;
 }
+h1 {
+    font-size: 90; /* You can adjust the number as needed */
+}
