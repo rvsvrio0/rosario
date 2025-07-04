@@ -1,6 +1,7 @@
 .home   {
     font-size: 16px;
     background-color: rgb(98, 28, 28);
+    background-image: url('flower blue.png');
     background-size: 10px 10px;
     background-position: center;
     background-repeat: repeat-x
@@ -11,7 +12,6 @@ body  {
     margin: 0;
     padding: 0;
     text-align: center;
-    text-decoration: black;
 }
 .header {
     font-family: 'Mr De Haviland', cursive;
