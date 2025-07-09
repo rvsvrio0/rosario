@@ -39,9 +39,17 @@ body {
     margin-bottom: 20px;
     font-style: italic;
 }
+.endphrase {
+    font-family: "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+    font-size: 28px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
 /*IMAGES SIZING
-""""""""""""""""""""""""""""""
--------------------------*/
+""""""""""""""""""""""""""""""*/
 .francesha5 {
     width: 50%;
     height: auto;
@@ -54,23 +62,24 @@ body {
     display: block;
     margin: 10px;
 }
-.francesha2 {
-    width: 50%;
-    height: auto;
-    display: block;
-    margin: 10px;
+.image-row {
+    display: flex;
+    justify-content: left; /* optional: centers the images horizontally */
+    gap: 5px;
+    margin: 10px; /* optional: adds space between the images */
 }
-.francesha3 {
-    width: 50%;
+.francesha2, .francesha3 {
+    width: 46%;
     height: auto;
     display: block;
-    margin: 10px;
+    margin: 5px;
 }
 .francesha4 {
-    width: 50%;
+    align-content: center;
+    width: 75%;
     height: auto;
     display: block;
-    margin: 10px;
+    margin: 5px;
 }
 
 /*BACKGROUND-----------------------------------
