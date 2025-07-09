@@ -1,3 +1,15 @@
 a, button {
   -webkit-tap-highlight-color: rgba(219, 41, 142, 0.5); /* Barbie pink with 50% opacity */
 }
+.home-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffe629;
+    color: #440000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 1000;
+}
