@@ -13,11 +13,12 @@ hehehehheheheheehheheheeheheheheheheheheheheheheh*/
     font-family: 'Meie Script', cursive;
     position: relative;
     font-size: 4.5em;
-    text-align: center;
+    text-align: left;
     max-width: 80%;
     color: #441c03;
-    margin: 1px;
+    margin: auto;
     padding: 20px;
+    margin-right: 3em;
     -webkit-text-fill-color: #edc974;
     text-shadow: 4px 4px 6px rgba(70, 10, 10, 0.8), -2px -2px 4px rgba(255, 232, 57, 0.888);
 }
