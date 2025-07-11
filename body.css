@@ -46,7 +46,7 @@ body {
     top: 0;
     left: 0;
     width: auto;
-    height: 90em;
+    height: 50em;
     z-index: -1; /* behind other content */
     opacity: 0.5; /* adjust as needed */
 }
@@ -65,7 +65,19 @@ p {
     margin: 20px;
     text-wrap-mode: normal;
 }
-
+.bottom-section {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+}
+footer {
+    position: relative;
+    display: inline-block;
+    padding: 0px;
+    margin: 0px;
+}
 
 /*------ SPECIFIED BUTTONS AND STUFF------*/
 
@@ -80,6 +92,20 @@ p {
   position: absolute;
   }
   .franceshabutton:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  }
+
+.turkanbutton {
+    position: absolute;
+    left: 0%;
+    width: 150px;
+    height: auto;
+    border: none;
+    padding: 0;
+    margin: 0%;
+}
+  .turkanbutton:hover {
   filter: brightness(1.1);
   cursor: pointer;
   }
