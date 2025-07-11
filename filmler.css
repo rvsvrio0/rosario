@@ -1,18 +1,17 @@
-html, body {
+/*-------------BACKGROUND-------------------- */
+html {
   margin: 0;
   padding: 0;
   position: relative;   /* makes the body the reference for absolute children */
 }
 body {
-  background-color: #000000; /* deep wine red */
+  background-color: #000000;
  background-image: url('backgrounds/Rouge_61.jpg');
-  margin: 0;
-  padding: 0;
+  margin: 1px solid #ffc640;
+  padding: 20px;
   background-size: cover;
   background-repeat: no-repeat;
 }
-
-
 
 .section1 {
     columns: 2;
@@ -28,7 +27,7 @@ p {
     margin: 20px;
     text-wrap-mode: normal;
 }
-/*---------------FRANCESHA BUTTON-------------------*/
+/*----------FRANCESHA BUTTON-------------*/
 .franceshabutton {
   display: inline-block;
   width: 150px;
