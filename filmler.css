@@ -1,0 +1,46 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;   /* makes the body the reference for absolute children */
+}
+body {
+  background-color: #000000; /* deep wine red */
+ background-image: url('backgrounds/Rouge_61.jpg');
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+
+.section1 {
+    columns: 2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px;
+    text-wrap-mode: normal;
+}
+/*---------------FRANCESHA BUTTON-------------------*/
+.franceshabutton {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-image: url('images/button-image.png');
+  background-size: cover;
+  background-position: center;
+  border: none;
+  position: absolute;
+  }
+  .franceshabutton:hover {
+  filter: brightness(1.1);
+  cursor: pointer;
+  }
+

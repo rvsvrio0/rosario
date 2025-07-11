@@ -1,4 +1,5 @@
 {
     "livePreview.defaultPreviewPath": "/index.html",
-    "luna.defaultImageSize": {}
+    "luna.defaultImageSize": {},
+    "editor.wordWrap": "on"
 }

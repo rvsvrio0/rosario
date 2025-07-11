@@ -35,21 +35,20 @@ hehehehheheheheehheheheeheheheheheheheheheheheheh*/
     opacity: 75%;
 }
 /*-------------BACKGROUND-------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  position: relative;   /* makes the body the reference for absolute children */
+}
 body {
   background-color: #720505; /* deep wine red */
   position: relative;
   margin: 0;
   padding: 0;
+  background-size:68% 200%;
+  background-repeat: no-repeat;
 }
-.backflower-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 50em;
-    z-index: -1; /* behind other content */
-    opacity: 0.5; /* adjust as needed */
-}
+
 /*---------------BODY------------------ */
 .section1 {
     columns: 2;
@@ -81,29 +80,15 @@ footer {
 
 /*------ SPECIFIED BUTTONS AND STUFF------*/
 
-.franceshabutton {
-  display: inline-block;
-  width: 150px;
-  height: 150px;
-  background-image: url('images/button-image.png');
-  background-size: cover;
-  background-position: center;
-  border: none;
-  position: absolute;
-  }
-  .franceshabutton:hover {
-  filter: brightness(1.1);
-  cursor: pointer;
-  }
-
 .turkanbutton {
-    position: absolute;
-    left: 0%;
-    width: 150px;
-    height: auto;
-    border: none;
-    padding: 0;
-    margin: 0%;
+  position: absolute;
+  left: 0%;
+  width: 150px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
 }
   .turkanbutton:hover {
   filter: brightness(1.1);
