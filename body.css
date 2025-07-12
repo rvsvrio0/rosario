@@ -5,97 +5,80 @@
 |  '--'.'| .-. |(  .-' ' ,-.  ||  .--',--.| .-. | 
 |  |\  \ ' '-' '.-'  `)\ '-'  ||  |   |  |' '-' ' 
 `--' '--' `---' `----'  `--`--'`--'   `--' `---'                                          
-hehehehheheheheehheheheeheheheheheheheheheheheheh*/
+hehehehheheheheehheheheeheheheheheheheheheheheheh
+*/
 
-
-/*---------------HEADER------------------ */
+/*---------------HEADER------------------*/
 .header {
     position: relative;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px;
-    border: none;
-    position-anchor: relative;
+    margin: 0;
+    padding: 0;
 }
+
 .header-image {
     display: block;
-    height: auto;
     position: absolute;
-    padding: 0%;
-    margin: 0%;
     top: 0;
     right: 0;
-    max-width: 40em; /* or whatever size you want */
-    height: auto;
-    opacity: 75%;
-    z-index: -2;
-}
-.titleimage {
+    max-width: 16em;
     width: 100%;
     height: auto;
-    position: relative;
+    opacity: 0.75; /* Use decimal opacity value */
+    z-index: -2;
     margin: 0;
-
+    padding: 0;
 }
 
-/*---------------BODY------------------ */
+.titleimage {
+    width: 98%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transform: translateX(40px);
+}
+
+/*---------------BODY------------------*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: none;
+    max-width: 100%;
+}
+
 body {
-  background-color: #720505; 
-  background-image: url('images01/backflower.png');
-  position: relative;
-  margin: 0;
-  padding: 0;
-  bottom: 0;
-  background-size: cover;
-  background-position: topcenter;
-  background-repeat: no-repeat;
+    background-color: #720505; 
+    background-image: url('images01/backflower.png');
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-attachment: fixed;
 }
+
 .section1 {
     columns: 2;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
     text-align: justify;
-    text-justify: inter-word;
-}
-p {
-    font-size: 20px;
-    line-height: 1.5;
-    margin: 20px;
-    text-wrap-mode: normal;
-}
-.bottom-section {
-    position: relative;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
-    border-radius: 0px;
-}
-footer {
-    position: relative;
-    display: inline-block;
-    padding: 0px;
-    margin: 0px;
 }
 
-/*------ SPECIFIED BUTTONS AND STUFF------*/
-
-
-.turkanbutton {
-
-  position: absolute;
-  left: 0%;
-  width: 150px;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  border: none;
-  background: none;
-  transition: transform 0.3s ease;
-  will-change: transform;
-  perspective: 1000px;
+/*---------BUTTON------------------*/
+.turkanbutton,.turkanbutton-link {
+    position: absolute;
+    left: 0;
+    bottom: 0%;
+    width: 131px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+    transform: translateX(+12px);
 }
-  .turkanbutton:hover {
-  filter: brightness(1.1);
-  cursor: pointer;
-  }
+.turkanbutton:hover {
+    filter: brightness(1.1);
+    cursor: pointer;
+}
