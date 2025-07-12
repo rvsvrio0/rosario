@@ -10,17 +10,12 @@ hehehehheheheheehheheheeheheheheheheheheheheheheh*/
 
 /*---------------HEADER------------------ */
 .header {
-    font-family: 'Meie Script', cursive;
     position: relative;
-    font-size: 4.3em;
-    text-align: left;
-    max-width: 100%;
-    color: #441c03;
-    margin: auto;
-    padding: 10px;
-    margin-inline-start: 0.5em;
-    -webkit-text-fill-color: #ffe553;
-    text-shadow: 4px 4px 6px rgba(84, 9, 9, 0.8), -2px -2px 4px rgba(255, 0, 93, 0.717);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: none;
+    position-anchor: relative;
 }
 .header-image {
     display: block;
@@ -33,25 +28,28 @@ hehehehheheheheehheheheeheheheheheheheheheheheheh*/
     max-width: 40em; /* or whatever size you want */
     height: auto;
     opacity: 75%;
+    z-index: -2;
+}
+.titleimage {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+
 }
 
-html, body {
-  margin: 0;
-  padding: 0;
-  position: relative;   /* makes the body the reference for absolute children */
-}
+/*---------------BODY------------------ */
 body {
   background-color: #720505; 
   background-image: url('images01/backflower.png');
   position: relative;
   margin: 0;
   padding: 0;
-  bottom: 0%;
-  background-size:56% 200%;
+  bottom: 0;
+  background-size: cover;
+  background-position: topcenter;
   background-repeat: no-repeat;
 }
-
-/*---------------BODY------------------ */
 .section1 {
     columns: 2;
     padding: 20px;
@@ -101,25 +99,3 @@ footer {
   filter: brightness(1.1);
   cursor: pointer;
   }
-
-.turkanbuttoncontainer::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.15), transparent 60%);
-  opacity: 0;
-  transition: opacity 0.5s ease, transform 0.5s ease;
-  pointer-events: none;
-}
-
-.turkanbuttoncontainer:hover .turkanbutton {
-  transform: scale(1.05);
-}
-
-.turkanbuttoncontainer:hover::after {
-  opacity: 1;
-  transform: scale(1.2);
-}
