@@ -76,13 +76,18 @@ body {
 }
 
 /* The Disc spins forever */
-.disc-container {
-  width: 100px;    /* Scaled down slightly for a corner icon */
-  height: 100px;
-  border-radius: 50%;
-  animation: rotateDisc 3s linear infinite;
+.discimage {
+  width: 150px;           /* Adjust this to make it smaller! */
+  height: 150px;          /* Keep width and height the same */
+  border-radius: 50%;     /* Keeps it circular */
+  
+  /* The Secret Sauce */
+  transform-origin: center center; 
   display: block;
+  
+  animation: rotateDisc 3s linear infinite;
 }
+
 
 @keyframes rotateDisc {
   from { transform: rotate(0deg); }
