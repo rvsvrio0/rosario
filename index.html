@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
     <link href="body.css" rel="stylesheet">
     <link href="script.js" rel="script">
+    <a href="images01/Bella_Kali.mp3" download="Bella_Kali.mp3"></a>
 </head>
 <body> 
         <img src="images01/title.png" alt="title" class="titleimage">
@@ -14,29 +15,41 @@
   <audio id="homesong" loop>
   <source src="images01/Bella_Kali.mp3" type="audio/mpeg">
 </audio>
-<script>
-    function startMusic() {
-      const song = document.getElementById('homesong');
-      song.play();
-      // This stops the listener once the music starts
-      document.removeEventListener('click', startMusic);
-    }
-
-    document.addEventListener('click', startMusic);
-  </script>
-  <a href="images01/Bella_Kali.mp3" download="Bella_Kali.mp3">
+  
 <div class="disc-container" id="discBtn">
-  <span class="tooltip">Click to play & Download</span>
+  <span class="tooltip">One click play/pause, dblclick download</span>
   <img src="images01/spinningdisc.png" class="discimage" alt="Spinning Disc">
 </div> 
-</a>
+<script>
+  const song = document.getElementById('homesong');
+  const discBtn = document.getElementById('discBtn');
+  const discImg = document.querySelector('.discimage'); 
 
+  discBtn.addEventListener('click', function(event) {
+    
+    event.preventDefault(); 
+
+    if (song.paused) {
+      song.play();
+      discImg.style.animationPlayState = 'running';
+    } else {
+      song.pause();
+      discImg.style.animationPlayState = 'paused';
+    }
+  });
+
+  discBtn.addEventListener('dblclick', function() {
+    const link = document.createElement('a');
+    link.href = 'images01/Bella_Kali.mp3'; 
+    link.download = 'Bella_Kali.mp3';
+    link.click();
+  });
+</script>
+</a>
     <section class="section1">
     </section>
-
         <a href="filmler.html" class="turkanbutton-link">
             <img src="images01/turkanbutton.png" alt="turkan button" class="turkanbutton">
         </a>
-
 </body>
 </html>
