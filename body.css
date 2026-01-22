@@ -8,15 +8,9 @@
 */
 
 /*---------------HEADER------------------*/
-.header {
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
 .header-image {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     max-width: 16em;
@@ -27,17 +21,6 @@
     margin: 0;
     padding: 0;
 }
-
-.titleimage {
-    width: 98%;
-    height: auto;
-    position: relative;
-    display: block;
-    margin: 0;
-    padding: 0;
-    transform: translateX(40px);
-}
-
 /*---------------BODY------------------*/
 html, body {
     height: 100%;
@@ -120,7 +103,7 @@ body {
 
 /*---------BUTTON------------------*/
 .turkanbutton,.turkanbutton-link {
-    position: absolute;
+    position: fixed;
     left: 0;
     bottom: 0%;
     width: 131px;
@@ -133,4 +116,15 @@ body {
 .turkanbutton:hover {
     filter: brightness(1.1);
     cursor: pointer;
+}
+/*---------FOOTER------------------*/
+.footer-text {
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff3a5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    opacity: 0.7;
 }
