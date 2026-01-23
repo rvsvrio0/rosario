@@ -30,16 +30,6 @@ html, body {
     max-width: 100%;
 }
 
-body {
-    background-color: #720505; 
-    background-image: url('images01/backflower.png');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    background-attachment: fixed;
-}
-
 .section1 {
     columns: 2;
     padding: 20px;
@@ -57,26 +47,20 @@ body {
   cursor: pointer;
 }
 
-
 .discimage {
   width: 150px;         
   height: 150px;         
   border-radius: 50%;   
-  
-
   transform-origin: center center; 
   display: block;
-  
   animation: rotateDisc 3s linear infinite;
 }
-
 
 @keyframes rotateDisc {
   from { transform: rotate(360deg); }
   to { transform: rotate(0deg); }
 }
 
-/* press to download */
 .tooltip {
   visibility: hidden;
   background-color: rgba(81, 8, 8, 0.8);
@@ -94,7 +78,6 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 10px;
 }
-
 .disc-container:hover .tooltip {
   visibility: visible;
   opacity: 1;

@@ -7,19 +7,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
     <link href="body.css" rel="stylesheet">
     <link href="script.js" rel="script">
+    <link href="background.css" rel="stylesheet"
     <a href="images01/Bella_Kali.mp3" download="Bella_Kali.mp3"></a>
 </head>
-<body> 
-        <img src="images01/2.png" alt="header image" class="header-image">
-  <audio id="homesong" loop>
-  <source src="images01/Bella_Kali.mp3" type="audio/mpeg">
-</audio>
+ <body> 
+   <audio id="homesong" loop>
+   <source src="images01/Bella_Kali.mp3" type="audio/mpeg">
+   </audio>
   
-<div class="disc-container" id="discBtn">
+   <div class="disc-container" id="discBtn">
   <span class="tooltip">One click play/pause, dblclick download</span>
   <img src="images01/spinningdisc.png" class="discimage" alt="Spinning Disc">
-</div> 
-<script>
+   </div> 
+
+  <script>
   const song = document.getElementById('homesong');
   const discBtn = document.getElementById('discBtn');
   const discImg = document.querySelector('.discimage'); 
@@ -43,14 +44,14 @@
     link.download = 'Bella_Kali.mp3';
     link.click();
   });
-</script>
-</a>
-    <section class="section1">
-    </section>
-        <a href="filmler.html" class="turkanbutton-link">
-            <img src="images01/turkanbutton.png" alt="turkan button" class="turkanbutton">
-        </a>
+  </script>
+
+    <a href="filmler.html" class="turkanbutton-link">
+      <img src="images01/turkanbutton.png" alt="turkan button" class="turkanbutton">
+    </a>
+
 <footer>
-    <p class="footer-text">© 2026 Rosario M. All rights reserved.</p>
+    <p class="footer-text">© 2026 Rosario M. All rights reserved.</p> 
+</footer>
 </body>
 </html>
