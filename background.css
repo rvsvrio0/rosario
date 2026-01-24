@@ -1,8 +1,4 @@
 body {
-    background-color: #6b0c0c;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+   background: #fbe53f;
+background: radial-gradient(circle,rgba(251, 229, 63, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }

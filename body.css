@@ -8,19 +8,7 @@
 */
 
 /*---------------HEADER------------------*/
-.header-image {
-    display: block;
-    position: fixed;
-    top: 0;
-    right: 0;
-    max-width: 16em;
-    width: 100%;
-    height: auto;
-    opacity: 0.75; /* Use decimal opacity value */
-    z-index: -2;
-    margin: 0;
-    padding: 0;
-}
+
 /*---------------BODY------------------*/
 html, body {
     height: 100%;
