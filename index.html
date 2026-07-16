@@ -6,9 +6,8 @@
     <link rel="icon" type="image/x-icon" href="images01/bluegirl.ico">
     <link href="https://fonts.googleapis.com/css2?family=Meie+Script&display=swap" rel="stylesheet">
     <link href="body.css" rel="stylesheet">
-    <link href="script.js" rel="script">
-    <link href="background.css" rel="stylesheet"
-    <a href="images01/Bella_Kali.mp3" download="Bella_Kali.mp3"></a>
+    <link href="background.css" rel="stylesheet">
+    <script src="script.js" defer></script>
 </head>
  <body> 
    <audio id="homesong" loop>
@@ -20,33 +19,12 @@
   <img src="images01/spinningdisc.png" class="discimage" alt="Spinning Disc">
    </div> 
 
-  <script>
-  const song = document.getElementById('homesong');
-  const discBtn = document.getElementById('discBtn');
-  const discImg = document.querySelector('.discimage'); 
+   <nav class="site-nav">
+      <a href="index.html">Home</a> |
+      <a href="container-pages/filmler.html">Films</a>
+   </nav>
 
-  discBtn.addEventListener('click', function(event) {
-    
-    event.preventDefault(); 
-
-    if (song.paused) {
-      song.play();
-      discImg.style.animationPlayState = 'running';
-    } else {
-      song.pause();
-      discImg.style.animationPlayState = 'paused';
-    }
-  });
-
-  discBtn.addEventListener('dblclick', function() {
-    const link = document.createElement('a');
-    link.href = 'images01/Bella_Kali.mp3'; 
-    link.download = 'Bella_Kali.mp3';
-    link.click();
-  });
-  </script>
-
-    <a href="filmler.html" class="turkanbutton-link">
+    <a href="container-pages/filmler.html" class="turkanbutton-link">
       <img src="images01/turkanbutton.png" alt="turkan button" class="turkanbutton">
     </a>
 

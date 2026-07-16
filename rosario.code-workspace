@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "images",
+			"path": "../../../Videos/images"
+		}
+	],
+	"settings": {
+		"luna.defaultImageSize": {},
+		"workbench.colorTheme": "Dark Pink",
+		"editor.fontFamily": "'JetBrains Mono'",
+		"liveServer.settings.multiRootWorkspaceName": "rosario"
+	}
+}
